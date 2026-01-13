@@ -7,4 +7,4 @@ decodings in alphabetical order.
 - No built-in Python functions used
 - Implemented using recursion and basic loops
 
-Run using: `python_dev_assignment.py`
+Run using: `python python_dev_assignment.py`
