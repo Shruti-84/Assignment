@@ -10,7 +10,7 @@ letters = [
     "O","P","Q","R","S","T","U","V","W","X","Y","Z"
 ]
 
-# Take input from user
+# Take input from user(only . and _)
 encrypted = input("Enter encrypted Morse string: ")
 
 results = []
