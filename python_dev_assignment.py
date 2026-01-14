@@ -1,4 +1,4 @@
-# Morse code mapping
+
 morse_keys = [
     "._", "_...", "_._.", "_..", ".", ".._.", "__.", "....", "..",
     ".___", "_._", "._..", "__", "_.", "___", ".__.", "__._", "._.",
@@ -10,19 +10,18 @@ letters = [
     "O","P","Q","R","S","T","U","V","W","X","Y","Z"
 ]
 
-# Take input from user(only . and _)
 encrypted = input("Enter encrypted Morse string: ")
 
 results = []
 
-# Function to calculate length 
+ 
 def get_length(s):
     count = 0
     for _ in s:
         count += 1
     return count
 
-# Function to check match 
+
 def match_string(text, pattern, index):
     i = 0
     while i < get_length(pattern):
@@ -33,7 +32,7 @@ def match_string(text, pattern, index):
         i += 1
     return True
 
-# Recursive decoding
+
 def decode(index, current):
     if index == get_length(encrypted):
         results.append(current)
@@ -48,10 +47,10 @@ def decode(index, current):
             decode(index + get_length(morse), current + letter)
         i += 1
 
-# Start decoding
+
 decode(0, "")
 
-#  sort in alphabetical order 
+
 n = get_length(results)
 i = 0
 while i < n:
@@ -64,7 +63,7 @@ while i < n:
         j += 1
     i += 1
 
-# Print output
+
 print("\nPossible Decodings:\n")
 i = 0
 while i < n:
