@@ -10,7 +10,7 @@ encrypted = input("Enter encrypted Morse string: ")
 results = []
 def get_length(text):
     count = 0
-    for _ in text:
+    for i in text:
         count = count + 1
     return count
 def match_morse(text, morse, index):
